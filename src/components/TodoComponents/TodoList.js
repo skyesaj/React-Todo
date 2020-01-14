@@ -5,7 +5,8 @@ import Todo from "./Todo";
 
 const TodoList = props => {
   return (
-    <ol>
+    // <ol>
+    <div className="list">
       {props.data.map(items => (
         <Todo
           key={items.id}
@@ -13,17 +14,13 @@ const TodoList = props => {
           toggleCompleted={props.toggleCompleted}
         />
       ))}
-    </ol>
+      <button className="delete" onClick={props.deleteComplete}>
+        Delete todo
+        {/* {" "} */}
+      </button>
+    </div>
+    // </ol>
   );
 };
-
-// const TodoList = props => {
-// return(
-//     <div>
-//         {props.data.map(item =>
-//             return <Todo item={item}key={item.id} toggleComplete={props.toggleComplete}/>
-//         })}
-//     </div>
-// );
 
 export default TodoList;
