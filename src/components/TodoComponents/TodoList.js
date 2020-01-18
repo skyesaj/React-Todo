@@ -15,7 +15,7 @@ const TodoList = props => {
         />
       ))}
       <button className="delete" onClick={props.deleteComplete}>
-        Delete todo
+        Delete ToDo
         {/* {" "} */}
       </button>
     </div>

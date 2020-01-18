@@ -30,7 +30,7 @@ class TodoForm extends Component {
         <input
           type="text"
           name="items"
-          //   placeholder="add task"
+          placeholder="add task"
           value={this.state.todoContent}
           onChange={this.handleChanges}
         />

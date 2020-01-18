@@ -86,7 +86,7 @@ class App extends Component {
       // <Container>
       <div className="header">
         <div>
-          <h1> TO-Do List</h1>
+          <h1> TO-DO LIST</h1>
           <TodoForm addTask={this.addTask} />
         </div>
         <TodoList
